@@ -12,8 +12,9 @@
 #include <sys/stat.h>
 #include <sys/types.h>
 #include <unistd.h>
-
+#ifndef BUFSIZE
 #define BUFSIZE 1024
+#endif
 int main(int argc, char* argv[]) {
   // 出错时返回负值不要用char。
   int ch;
