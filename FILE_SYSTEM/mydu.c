@@ -61,6 +61,7 @@ static long long mydu(char *path) {
     }
   }
 
+  globfree(&globres);
   return sum;
 }
 
