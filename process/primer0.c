@@ -23,4 +23,5 @@ int main() {
       printf("%d is primer\n", i);
     }
   }
+  exit(0);
 }
