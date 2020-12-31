@@ -18,7 +18,9 @@
 #define BUFSIZE CPS
 #define BURST 100
 
-static volatile int token = 0;
+// volatile 保证不被优化成常量
+// sig_atomic_t 保证读写都是由一条指令完成的
+static volatile sig_atomic_t token = 0;
 static void alarm_handler(int s) {
   alarm(1);
   ++token;
