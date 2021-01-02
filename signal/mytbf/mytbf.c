@@ -42,7 +42,7 @@ static void alarm_handler() {
   alarm(1);
   for (int i = 0; i < MYBTF_MAX; ++i) {
     if (job[i] != NULL) {
-      job[i]->token += job[i]->burst;
+      job[i]->token += job[i]->cps;
       job[i]->token = min(job[i]->token, BUFSIZ);
     }
   }
