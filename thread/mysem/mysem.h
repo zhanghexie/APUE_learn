@@ -3,12 +3,12 @@
 
 typedef void mysem_t;
 
-// mysem_t* mysem_int(int);
+mysem_t* mysem_int(int);
 
-// int mysem_add(mysem_t*, int);
+int mysem_add(mysem_t*, int);
 
-// int mysem_sub(mysem_t*, int);
+int mysem_sub(mysem_t*, int);
 
-// int mysem_destory(mysem_t*);
+int mysem_destory(mysem_t*);
 
 #endif
